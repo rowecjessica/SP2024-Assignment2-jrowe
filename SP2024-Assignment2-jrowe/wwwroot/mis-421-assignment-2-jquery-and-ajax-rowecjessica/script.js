@@ -7,14 +7,13 @@ function apiSearch() {
     "count": "50",
     "offset": "0",
     "mkt": "en-us"
-    };
-
+  };
 
 
   $.ajax({
       url: 'https://api.bing.microsoft.com//v7.0/search?' + $.param(params),
       beforeSend: function (xhrObj) {
-          xhrObj.setRequestHeader("bc20c3f3-2363-4ad6-b4c4-9f52c1a8d975", "9b36fa6526ff420f97526ddac2ac1199");
+          xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "9b36fa6526ff420f97526ddac2ac1199");
       },
       type: "GET",
     })
