@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/humanity/jquery-ui.css" integrity="sha384-YqiNYsUMsFrsO+ZeDiqBq9X+QjbPWpl0gy9+PWJMwQlESWxhUg1wTA7Qw4xYvAjB" crossorigin="anonymous">
+    <title>Title of Search Engine</title>
+</head>
+
+
+<body>
+
+    <script type="text/javascript" src="./script.js"></script>
+    <h1 id="header" onclick="changeBackground()">Title of Search Engine</h1>
+
+    <div id="searchBox">
+        <input type="text" id="query">
+        <button onclick="apiSearch()" value="search">Search Button</button>
+    </div>
+
+    <button id="curTime" onclick="getCurTime()">Display Current Time</button>
+    <div id="searchResults"></div>
+    <div id="time">
+        <h1 id="timeHeader">Current Time:</h1>
+    </div>
+
+</body>
+
+</html>
