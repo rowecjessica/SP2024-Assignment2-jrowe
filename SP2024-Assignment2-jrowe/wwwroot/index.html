@@ -8,23 +8,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/humanity/jquery-ui.css" integrity="sha384-YqiNYsUMsFrsO+ZeDiqBq9X+QjbPWpl0gy9+PWJMwQlESWxhUg1wTA7Qw4xYvAjB" crossorigin="anonymous">
-    <title>Title of Search Engine</title>
+    <title>Search Savvy</title>
 </head>
 
 
 <body>
 
     <script type="text/javascript" src="./script.js"></script>
-    <h1 id="header" onclick="changeBackground()">Title of Search Engine</h1>
+    <h1 id="header" onclick="changeBackground()">Search Savvy</h1>
 
-    <div id="searchBox">
-        <input type="text" id="query">
-        <button onclick="apiSearch()" value="search">Search Button</button>
-    </div>
+    <input type="text" id="query"><br />
+    <button id="searchButton" onclick="apiSearch()" value="search">Search</button>
+   
 
-    <button id="curTime" onclick="getCurTime()">Display Current Time</button>
-    <div id="searchResults"></div>
-    <div id="time">
+    <button id="curTime" onclick="getCurTime()">Click to Display Current Time</button>
+    <div id="searchResults" class="hidden"></div>
+    <div id="time" class="hidden">
         <h1 id="timeHeader">Current Time:</h1>
     </div>
 

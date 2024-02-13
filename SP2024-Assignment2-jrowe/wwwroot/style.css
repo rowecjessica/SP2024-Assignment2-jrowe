@@ -4,19 +4,21 @@ body {
 
 #header{
     text-align:center;
-    color:floralwhite;
+    color:saddlebrown;
     font-size: 100px;
+    background-color: lightgrey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family:Papyrus;
 }
 
-#searchBox {
+
+#query {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
-}
-
-#query{
-    margin-right: 10px;
+    margin: 0 auto;
+    font-size: 40px;
 }
 
 #searchResults{
@@ -27,9 +29,32 @@ body {
     text-align: center;
     display: block; 
     margin: 0 auto;
+    background-color: saddlebrown;
+    color:antiquewhite;
+    font-size: 30px;
+    margin-top: 50px; 
+    padding: 15px;
 }
 
 #time{
     color: saddlebrown;
+    display: none;
+}
+
+#searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkolivegreen;
+    background-color:lightgrey;
+    border-block-color: saddlebrown;
+    border-style:groove;
+}
+
+.hidden{
     display: none;
 }
